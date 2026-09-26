@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Roronoa Zoro — Interactive Web Experience
 
-## Getting Started
+A cinematic, interactive storytelling website featuring dual-phase scrolling, a canvas frame-scrubber, WebGL flame shaders, and an illustrated washi paper chronicle.
 
-First, run the development server:
+---
+
+## 🔰 Beginner-Friendly Setup Guide
+
+Follow these steps to get the website running on your local machine:
+
+### Prerequisites
+Make sure you have **Node.js** (v18.18 or higher) and **Git** installed on your computer.
+- Download Node.js: [https://nodejs.org/](https://nodejs.org/)
+- Download Git: [https://git-scm.com/](https://git-scm.com/)
+
+---
+
+### Step 1: Clone the Repository
+Open your terminal (Command Prompt, PowerShell, or Terminal) and run:
+
+```bash
+git clone https://github.com/go-hyperlink/roronoa.git
+```
+
+---
+
+### Step 2: Navigate to the Project Folder
+Move into the project directory:
+
+```bash
+cd roronoa
+```
+
+---
+
+### Step 3: Install Dependencies
+Download and install all required packages:
+
+```bash
+npm install
+```
+
+---
+
+### Step 4: Start the Development Server
+Launch the local web server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Step 5: View the Website
+Open your web browser (Chrome, Edge, Safari, Brave, etc.) and visit:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+👉 **[http://localhost:3000](http://localhost:3000)**
 
-## Learn More
+You should now see the interactive experience running live!
 
-To learn more about Next.js, take a look at the following resources:
+> **Tip**: To stop the server at any time, press `Ctrl + C` in your terminal.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Building for Production
 
-## Deploy on Vercel
+When you are ready to test the optimized production build:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# 1. Build the production package
+npm run build
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 2. Run the production server
+npm start
+```
+
+---
+
+## 📁 Project Structure
+
+- `components/` — Canvas frame scrubber, WebGL blaze shader, timeline, and storybook chapters.
+- `public/frames/` — Sequential webp animation frames for the hero scrubber.
+- `public/audio/` — Background audio track (`audio.mp3`).
+- `public/zoro-pic/` — Storybook illustrations.
+- `lib/` — Web Audio API engine, sequence preloader, and chapter constants.
+- `promt.md` — Reusable master prompt template for creating similar websites.
